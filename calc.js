@@ -1,9 +1,12 @@
 console.log('--------------------------------')
 function miningCalc(cardWtUsage, cardNumber, rigWtUsage, usdPrice) {
     const hoursInMonths = 720
+
+    // Individual parameter
     const kWPriceRUB = 3.4
 
-    var powerUsagePerHourKWT = (cardWtUsage * cardNumber + rigWtUsage) / 1000
+
+    var powerUsagePerHourKWT = (cardWtUsage * cardNumber + rigWtUsage) / 1000 // Convert wT on kWt
     var powerUsagePerMonthKWT = hoursInMonths * powerUsagePerHourKWT.toFixed()
 
     var sumPerMonthsRUB = powerUsagePerMonthKWT * kWPriceRUB
