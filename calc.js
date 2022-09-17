@@ -1,0 +1,1 @@
+const hoursInMonths = 720
